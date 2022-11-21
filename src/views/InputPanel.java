@@ -12,6 +12,12 @@ public class InputPanel extends JPanel {
         this.label = new JLabel("InputPanel");
         this.field = new JTextField();
         this.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
+        this.addComponent();
+    }
+
+    public void addComponent() {
+        this.add(label);
+        this.add(field);
     }
 
     public InputPanel(JLabel label) {

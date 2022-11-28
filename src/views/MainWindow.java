@@ -22,9 +22,11 @@ public class MainWindow extends JFrame {
         this.initComponent();
         this.initWindow();
     }
+    
     public void initComponent() {
 
     }
+
     public void initWindow() {
         this.setIconImage(new ImageIcon("images/lelepi_logo.png").getImage());
         this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.PAGE_AXIS));
@@ -33,6 +35,7 @@ public class MainWindow extends JFrame {
         this.pack();
         this.setVisible(true);
     }
+
     public void addComponents() {
         this.add(this.titlePanel);
         this.add(this.aedgePanel);
